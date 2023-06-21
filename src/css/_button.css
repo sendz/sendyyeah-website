@@ -1,0 +1,36 @@
+.button {
+  display: inline-flex;
+  flex-shrink: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  flex-wrap: wrap;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  border-radius: var(--spacing-xs);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-base);
+  padding: var(--spacing-xs) var(--spacing-s);
+}
+
+.button.button-primary {
+  background-color: var(--bg-violet-700);
+  color: white;
+}
+
+.button.button.button-primary > * {
+  color: white;
+  border-color: white;
+}
+
+.button.button.button-primary svg {
+  max-width: var(--spacing-l);
+  max-height: var(--spacing-l);
+}
+
+.cursor-default {
+  cursor: default;
+}

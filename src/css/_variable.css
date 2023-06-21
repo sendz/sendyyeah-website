@@ -1,0 +1,60 @@
+:root {
+  --breakpoint-xs-min: 0px;
+  --breakpoint-sm-min: 320px;
+  --breakpoint-md-min: 768px;
+  --breakpoint-lg-min: 1024px;
+
+  --body-background-color: #fff;
+
+  --bg-slate-200: rgb(226 232 240);
+  --bg-slate-300: rgb(203 213 225);
+  --bg-slate-800: rgb(30 41 59);
+
+  --bg-violet-700: rgb(109 40 217);
+
+  --spacing-xxs: 2px;
+  --spacing-xs: 4px;
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 32px;
+  --spacing-xl: 64px;
+  --spacing-xxl: 128px;
+  --h-screen-size: 100vh;
+  --w-screen-size: 100vw;
+
+  --text-black: rgb(0 0 0);
+  --text-white: rgb(255 255 255);
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  
+
+  --font-style-italic: italic;
+  --font-style-not-italic: normal;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-xxl: 1.5rem;
+
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  --line-height-xs: 1rem;
+  --line-height-s: 1.25rem;
+  --line-height-sm: 1.25rem;
+  --line-height-base: 1.5rem;
+  --line-height-lg: 1.75rem;
+  --line-height-xl: 1.75rem;
+  --line-height-xxl: 2rem;
+}

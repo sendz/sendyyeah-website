@@ -1,3 +1,9 @@
+@import "_variable.css";
+@import "_flex.css";
+@import "_hero.css";
+@import "_avatar.css";
+@import "_button.css";
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
