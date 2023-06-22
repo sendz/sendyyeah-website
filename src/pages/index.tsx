@@ -4,10 +4,14 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 
 import { HeroComponent } from "../components/Hero";
+import { PortfolioWidget } from "../components/Portfolio";
 
 function HomepageHeader() {
   return (
-    <HeroComponent />
+    <main>
+      <HeroComponent />
+      <PortfolioWidget />
+    </main>
   );
 }
 
