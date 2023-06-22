@@ -47,6 +47,7 @@ Contoh matriks keyboard dengan dupleks:
 | **row3** |          |    Q     |          |    E     |   dst   |
 
 ![Schematic Grid](./keyboard-grids.png)
+
 **Gambar di atas saya ambil dari [Matrices and Duplex Matrix | Keyboard Designer Wiki @ ai03.me](https://wiki.ai03.com/books/pcb-design/page/matrices-and-duplex-matrix)**
 
 #### Kesimpulan
@@ -80,7 +81,7 @@ Dengan schematic tersebut, saya menggunakan 10 pin untuk row dan 8 pin untuk col
 
 Pertama-tama yang harus dilakukan adalah mendefinisikan jumlah ROW dan COL di file `config.h`.
 
-```CPP
+```cpp title="config.h"
 #define MATRIX_ROWS 10
 #define MATRIX_COLS 8
 ```
@@ -89,7 +90,7 @@ Jumlah `MATRIX_ROWS` dan `MATRIX_COLS` merepresentasikan jumlah pin yang digunak
 
 Masih di file `config.h`, kemudian menuju pin assignment, di sini dituliskan pin mana saja yang digunakan untuk ROW dan COL, penulisan diurutkan dari ROW0, ROW1, ROW2 dan seterusnya, begitu juga untuk *column*. Pastikan jumlah PIN yang dimasukkan sama dengan angka yang sudah dimasukkan pada tahap sebelumnya.
 
-```CPP
+```cpp title="config.h"
 #define MATRIX_ROW_PINS { B6, F4, F5, F6, F7, B1, B3, B2, B4, B5 }
 #define MATRIX_COL_PINS { D3, D2, D1, D0, D4, C6, D7, E6 }
 ```
@@ -98,13 +99,13 @@ Selanjutnya adalah tahap yang paling membingungkan, mapping dari *schematic grid
 
 Ini adalah penjelasan singkat ketika mendefiniskan layout
 
-```CPP
+```cpp title="75pixels.h"
 #define LAYOUT_ortho_5x15 ( __PHYSICAL_LAYOUT__ ) { __SCHEMATIC_GRID__ }
 ```
 
 Ini versi sedikit lebih membingungkan
 
-```CPP
+```cpp
 #define LAYOUT_ortho_5x15 (
     GRID_0_0, GRID_1_0, GRID_0_1, GRID_1_1, GRID_0_2, GRID_1_2, GRID_0_3, GRID_1_3, ... \
     GRID_2_0, GRID_3_0, GRID_2_1, GRID_3_1, GRID_2_2, GRID_3_2, GRID_2_3, GRID_3_3, ... \
@@ -126,7 +127,7 @@ adalah
 
 Contoh file `75pixels.h`
 
-```CPP
+```cpp title="75pixels.h"
 #define LAYOUT_ortho_5x15(\
     K00, K10, K01, K11, K02, K12, K03, K13, K04, K14, K05, K15, K06, K16, K07, \
     K20, K30, K21, K31, K22, K32, K23, K33, K24, K34, K25, K35, K26, K36, K27, \
