@@ -27,6 +27,8 @@ const Works: IWorksContentComponent[] = [
 
 export const PortfolioWidget = () => {
   return (
+    <section title="Portfolio">
+    <h1 className="px-8 pt-8 text-4xl font-bold">Portfolio</h1>
     <div className="p-8 snap-mandatory snap-y" id="works-showcase">
       {Works.map((work, index) => (
         <WorksContentComponent
@@ -40,5 +42,6 @@ export const PortfolioWidget = () => {
         />
       ))}
     </div>
+    </section>
   )
 }

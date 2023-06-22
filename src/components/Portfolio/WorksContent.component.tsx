@@ -19,7 +19,7 @@ export const WorksContentComponent = (props: IWorksContentComponent) => {
         <p className="text-lg hidden lg:inline">{props.description}</p>
         <div className="flex-row my-2">
           {props.tags.map((tag, index) => (
-            <span key={index} className="daisy-badge daisy-badge-outline mr-2">{tag}</span>
+            <span key={index} className="daisy-badge daisy-badge-outline border-solid mr-2">{tag}</span>
           ))}
         </div>
       </div>

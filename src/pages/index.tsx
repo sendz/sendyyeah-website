@@ -5,13 +5,11 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 
 import { HeroComponent } from "../components/Hero";
 import { PortfolioWidget } from "../components/Portfolio";
+import { Footer } from "../components/Footer";
 
 function HomepageHeader() {
   return (
-    <main>
-      <HeroComponent />
-      <PortfolioWidget />
-    </main>
+    <HeroComponent />
   );
 }
 
@@ -24,7 +22,8 @@ export default function Home(): JSX.Element {
     >
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+      <PortfolioWidget />
+      <Footer />
       </main>
     </Layout>
   );
