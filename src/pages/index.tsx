@@ -19,7 +19,7 @@ function HomepageHeader() {
     <div className="avatar">
       <img src="/img/avatar.jpg" alt="Sendy"/>
     </div>
-    <div className="hero-content">
+    <div className="hero-content justify-between">
       <h1>Hello, my name is Sendy!</h1>
       <p>{siteConfig.tagline}</p>
       <div className="flex flex-row align-content-center">

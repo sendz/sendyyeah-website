@@ -13,3 +13,7 @@
 .align-content-center {
   align-content: center;
 }
+
+.justify-between {
+  justify-content: space-between;
+}

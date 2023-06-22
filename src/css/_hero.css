@@ -7,6 +7,10 @@
   justify-content: space-between;
   padding: var(--spacing-l);
   text-align: center;
+  width: 100%;
+  place-items: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero .hero-content {
