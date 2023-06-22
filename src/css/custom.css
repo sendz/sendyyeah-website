@@ -1,8 +1,7 @@
-@import "_variable.css";
-@import "_flex.css";
-@import "_hero.css";
-@import "_avatar.css";
-@import "_button.css";
+/* https://dev.to/sajclarke_62/using-tailwindcss-v3-in-docusaurus-in-5-steps-5c26 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /**
  * Any CSS included here will be global. The classic template
