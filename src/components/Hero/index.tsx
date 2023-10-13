@@ -11,9 +11,7 @@ export const HeroComponent = () => {
         <AvatarComponent />
         <div>
           <h1 className="text-5xl font-bold">Hello, my name is Sendy!</h1>
-          <p className="py-6 text-lg">
-            {siteConfig.tagline}
-          </p>
+          <p>A web frontend developer based in Indonesia and build mechanical keyboard in my free time. Love to build things that usable for people.</p>
           <span className="daisy-btn daisy-btn-primary mr-2 cursor-default">
             <CodeBracketSquareIcon className="w-6 h-6 mr-2" />
             Developer

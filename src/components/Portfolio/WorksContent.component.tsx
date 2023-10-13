@@ -12,9 +12,9 @@ export type IWorksContentComponent = {
 export const WorksContentComponent = (props: IWorksContentComponent) => {
   console.log(props)
   return (
-    <div className={`my-8 h-full bg-base-100 flex flex-col justify-around snap-center ${props.reverse ? "lg:flex-row-reverse" : "lg:flex-row "}`}>
-      <figure className="w-full lg:w-3/5"><img src={props.image} alt={props.name}/></figure>
-      <div className="w-full lg:w-2/5 p-8 flex-col justify-center">
+    <div className={`my-8 h-full bg-base-100 flex flex-col justify-around snap-center lg:justify-between ${props.reverse ? "lg:flex-row-reverse" : "lg:flex-row "}`}>
+      <figure className={`max-w-full lg:w-full lg:w-3/5 ${props.reverse ? "text-right": ""}`}><img src={props.image} alt={props.name}/></figure>
+      <div className="max-w-full lg:w-full lg:w-2/5 p-8 flex-col justify-center">
         <h2 className="text-xl font-bold">{props.name}</h2>
         <p className="text-lg hidden lg:inline">{props.description}</p>
         <div className="flex-row my-2">

@@ -1,11 +1,11 @@
 import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
-
 import { HeroComponent } from "../components/Hero";
 import { PortfolioWidget } from "../components/Portfolio";
 import { Footer } from "../components/Footer";
+import { TalksWidget } from "@site/src/components/Portfolio/Talks";
+import { PaperWidget } from "@site/src/components/Portfolio/Paper";
 
 function HomepageHeader() {
   return (
@@ -23,6 +23,8 @@ export default function Home(): JSX.Element {
       <HomepageHeader />
       <main>
       <PortfolioWidget />
+      <PaperWidget />
+      <TalksWidget />
       <Footer />
       </main>
     </Layout>

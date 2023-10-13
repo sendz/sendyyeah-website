@@ -441,7 +441,7 @@ Contoh konfigurasi yang saya gunakan di `package.json`
       "!**/CONSTANT/*.*",
       "!**/constants/*.*",
       "!**/languages/*.*",
-      "!**/index.tsx",
+      "!**/Paper.tsx",
       "!**/index.ts"
     ]
   }

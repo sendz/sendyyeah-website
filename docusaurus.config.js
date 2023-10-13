@@ -46,7 +46,7 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          blogSidebarCount: 0,
+          blogSidebarCount: 5,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -71,11 +71,23 @@ const config = {
         //   src: 'img/logo.svg',
         // },
         items: [
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: 'Tutorial',
+          // },
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'dropdown',
+            label: 'Works',
             position: 'left',
-            label: 'Tutorial',
+            items: [
+              {
+                label: 'Euy 40 Keyboard',
+                docId: 'euy-keyboard',
+                to: 'euy-keyboard',
+              }
+            ]
           },
           {to: '/blog', label: 'Blog', position: 'left'},
         ],
@@ -123,7 +135,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Sendy. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
