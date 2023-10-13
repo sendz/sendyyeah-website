@@ -98,6 +98,11 @@ const config = {
             ]
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/the-lazy-projects',
+            label: 'The Lazy Projects',
+            position: 'left',
+          },
         ],
       },
       footer: {
