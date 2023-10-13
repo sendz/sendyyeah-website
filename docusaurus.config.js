@@ -116,16 +116,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/5MQxgv6U',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/sendyyeah',
               },
             ],
           },
@@ -138,7 +134,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/sendz',
               },
             ],
           },
