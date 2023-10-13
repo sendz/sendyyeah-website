@@ -74,7 +74,7 @@ export default function Dotsy() {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          height: '50vh',
+          minHeight: '90vh',
           fontSize: '20px',
         }}>
         <div className="App">
