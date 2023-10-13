@@ -4,7 +4,7 @@ title: Desain Mechanical Keyboard dengan Duplex
 type: post
 date: 2021-06-12 15:16:00 +07:00
 published: true
-categories: qmk, mechanical keyboard
+categories: [qmk, mechanical keyboard]
 tags: [kicad, qmk, mechanical keyboard]
 authors: sendy
 comments: true
