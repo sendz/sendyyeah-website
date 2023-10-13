@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Layout from "@theme/Layout";
-import { randomRgbaString } from "@site/src/pages/the-lazy-projects/dotsy/tools/generateColor";
-import { DotsContainer } from "@site/src/pages/the-lazy-projects/dotsy/components/DotsContainer";
+import { randomRgbaString } from "@site/src/pages/the-lazy-projects/dotsy/_tools/generateColor";
+import { DotsContainer } from "@site/src/pages/the-lazy-projects/dotsy/_components/DotsContainer";
 import "./styles.css";
 export default function Dotsy() {
   const [level, setLevel] = useState(1);
