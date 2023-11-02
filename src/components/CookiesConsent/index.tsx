@@ -18,7 +18,7 @@ export const CookiesConsent = () => {
   if (cookiesConsentCookie && !showCookiesConsent) {
     // return a floating button to reconfigure the cookies
     return (
-      <div className="fixed right-8 bottom-8 shadow-xl">
+      <div className="w-24 fixed right-8 bottom-8 shadow-xl">
         <button className="daisy-btn daisy-btn-primary" onClick={() => setShowCookiesConsent(true)}>Cookies</button>
       </div>
     )
