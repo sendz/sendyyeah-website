@@ -69,7 +69,7 @@ Next, open the KiCad application, open `Preferences` -> `Manage Symbol Libraries
 ![Symbol Libraries](./_assets/symbol-libraries.png)
 
 - Click `Folder` at bottom left with `Add existing library to table` hint
-- Browse your downloaded file, select any file with `.kicad_sym` file extension
+- Browse your downloaded file, select any file with `.kicad_sym` or `.lib` file extension
 - Click `OK`
 
 ### Footprint Libraries
