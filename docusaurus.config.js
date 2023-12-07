@@ -108,6 +108,10 @@ const config = {
             label: 'The Lazy Projects',
             position: 'left',
           },
+          {
+            to: '/about',
+            label: 'About'
+          }
         ],
       },
       footer: {
