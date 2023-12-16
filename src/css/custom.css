@@ -38,3 +38,22 @@
   display: flex;
   align-items: center;
 }
+
+a {
+  @apply underline;
+  @apply decoration-solid;
+  color: var(--ifm-heading-color);
+}
+
+a:hover {
+  @apply underline;
+  @apply decoration-dashed;
+
+  color: var(--ifm-heading-color);
+}
+
+.navbar a, .menu a, [itemprop="headline"] a {
+  @apply no-underline;
+}
+
+@import url("_button.css");

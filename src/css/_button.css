@@ -1,4 +1,15 @@
 .button {
+  @apply bg-transparent;
+  @apply rounded-none;
+  @apply items-center;
+  @apply content-center;
+  @apply text-center;
+  @apply h-12;
+  @apply px-6;
+  @apply flex-wrap;
+
+  color: var(--ifm-heading-color);
+  vertical-align: baseline;
   display: inline-flex;
   flex-shrink: 0;
   cursor: pointer;
@@ -10,27 +21,61 @@
   align-items: center;
   justify-content: center;
   border-color: transparent;
-  border-radius: var(--spacing-xs);
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-base);
-  padding: var(--spacing-xs) var(--spacing-s);
 }
 
 .button.button-primary {
-  background-color: var(--bg-violet-700);
-  color: white;
+  @apply border-solid;
+  @apply border-2;
+  @apply border-black;
+
+  color: var(--ifm-heading-color);
 }
 
-.button.button.button-primary > * {
+.button.button-primary svg {
+  stroke: black;
+  fill: transparent;
+  color: black;
+}
+
+.button.button-primary > * {
   color: white;
   border-color: white;
 }
 
-.button.button.button-primary svg {
+.button.button-primary svg {
   max-width: var(--spacing-l);
   max-height: var(--spacing-l);
 }
 
+.button:hover {
+  @apply text-gray-900;
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--text-white) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--b3) / var(--tw-bg-opacity));
+}
+
 .cursor-default {
   cursor: default;
+}
+
+[data-theme="dark"] {
+  .button.button-primary {
+    @apply border-solid;
+    @apply border-2;
+    border-color: var(--ifm-heading-color);
+    color: var(--ifm-heading-color)
+  }
+
+  .button.button-primary svg {
+    stroke: white;
+    fill: transparent;
+    color: var(--ifm-heading-color);
+  }
+
+  .button:hover {
+    color: var(--ifm-heading-color);
+  }
 }
