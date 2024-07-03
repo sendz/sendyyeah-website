@@ -268,6 +268,10 @@ if ((buttbx.key[i].kchar >= 0 && buttbx.key[i].kchar <= 3) || (buttbx.key[i].kch
 
 Jadi, saat key pada posisi-posisi `IDLE` atau tidak aktif, kode ini akan memanggil kembali fungsi untuk mengirim sinyal "PUSH" ke controller, alasannya adalah, banyak game yang tidak support toggle switch, yang artinya ketika ingin mematikan fungsi di game, kita harus pencet ulang tombol yang diset baik di keyboard atau di keypad, sehingga ketika kita matikan toggle switch, kita butuh mengirim kembali sinyal "PUSH" ke controller agar diteruskan ke game lalu mematikan fungsi tersebut.
 
+Jika game yang akan dimainkan dengan box ini hanya Euro Truck Simulator 2 / American Truck Simulator, tidak perlu mengubah kode terlalu banyak, karena di kedua game tersebut sudah mendukung Toggle Switch Mode, cukup tetap nyalakan switch ketika *assign* switch tersebut ke *keys mapping*
+
 Referensi yang saya pakai:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YQ7Ro_SuVoY?si=2IhzSIQ8coZBtGMR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Selesai, selamat mencoba.
