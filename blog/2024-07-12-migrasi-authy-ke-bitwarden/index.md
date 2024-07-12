@@ -14,6 +14,8 @@ Setelah pengumuman [Authy mengakhiri support untuk aplikasi Desktop](https://www
 
 Setelah menjelajahi internet, saya menemukan cara untuk mengekstrak kode TOTP dari Authy untuk dipindah ke aplikasi lain, salah satunya Bitwarden. Namun untuk memulai, kita harus memasang Authy versi lama (versi 2.2.3) karena masih mendukung _remote debugging_.
 
+<!--truncate-->
+
 ## Pasang Authy versi 2.2.3
 
 :::info
