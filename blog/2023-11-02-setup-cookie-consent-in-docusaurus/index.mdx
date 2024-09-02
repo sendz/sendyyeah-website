@@ -1,0 +1,49 @@
+---
+layout: post
+title: Setup Cookie Consent Banner with Google Tag Manager in Docusaurus
+type: post
+date: 2023-11-02 10:44:00 +07:00
+categories: [google,gtm]
+authors: sendy
+comments: false
+---
+
+## What is Cookie Consent Banner?
+
+Cookie Consent Banner is a banner that appears on your website to inform your visitors that your website uses cookies. It is required by law in some countries. You can read more about it [here](https://www.cookiebot.com/en/cookie-law/).
+
+## Why use Google Tag Manager?
+
+Google Tag Manager is a tag management system that allows you to manage and deploy marketing tags (snippets of code or tracking pixels) on your website (or mobile app) without having to modify the code. You can read more about it [here](https://support.google.com/tagmanager/answer/6102821?hl=en).
+
+## How to setup Cookie Consent Banner with Google Tag Manager in Docusaurus?
+
+1. Setup an account in Google Tag Manager.
+2. Create a new container.
+3. Add a new tag.
+4. Create a new tag in Google Tag Manager.
+5. Choose Custom HTML as the tag type.
+6. Copy the code from [Cookie Consent](https://cookieconsent.osano.com/download/) and paste it in the HTML field.
+7. Add the following code to the end of the script:
+
+```js
+window.addEventListener("load", function () {
+  window.cookieconsent.initialise({
+    palette: {
+      popup: {
+        background: "#000",
+      },
+      button: {
+        background: "#f1d600",
+      },
+    },
+    content: {
+      message: "This website uses cookies to ensure you get the best experience on our website.",
+      dismiss: "Got it!",
+      link: "Learn more",
+      href: "https://www.cookiesandyou.com",
+    },
+  });
+});
+```
+
